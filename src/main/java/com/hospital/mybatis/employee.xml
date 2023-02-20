@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjoeun.vo.CategoryVO">
+
+
+	<select id="selectEmployeeListByName" parameterType="String" resultType="com.hospital.vo.Employee_20VO">
+		select * from employee_20 where Name like '%'||#{item}||'%' order by name
+	</select>
+
+	<select id="selectdpartListByName" parameterType="String" resultType="com.hospital.vo.Dpart_23VO">
+		select * from dpart_23 where dpartname like '%'||#{item}||'%' order by dpartIdx
+	</select>
+
+
+
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

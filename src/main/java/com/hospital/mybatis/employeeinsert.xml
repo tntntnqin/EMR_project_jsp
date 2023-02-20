@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.vo.Employee_20VO">
+
+	<!-- id: sql 명령을 식별한다. -->
+	<!-- parameterType: sql 명령으로 전달되는 데이터의 타입을 적는다. -->
+	<!-- resultType: sql 명령 실행결과 리턴되는 데이터의 타입을 적는다. -->
+	
+	<!-- 직원 회원가입 데이터 저장 -->
+	<insert id="employeeinsert" parameterType="com.hospital.vo.Employee_20VO">
+		insert into EMPLOYEE_20 (employeeIdx, password, name, gender, age, dpart, doctorT, nurseT, dnumber, enumber)
+		values (#{employeeIdx}, #{password}, #{name}, #{gender}, #{age}, #{dpart}, #{doctorT, jdbcType=VARCHAR}, #{nurseT, jdbcType=VARCHAR}, #{dnumber}, #{enumber})
+	</insert>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
